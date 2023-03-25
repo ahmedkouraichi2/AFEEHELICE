@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&display=swap');
+* {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+:root {
+  --black: #16161d;
+  --white: #fff;
+  --light-color: #808080;
+  --light-bg: #f5f5f8;
+  --google-color: #4285f4;
+  --twitter-color: #1da1f2;
+  --youtube-color: #ff0000;
+  --linkedin-color: #0e76a8;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+html::-webkit-scrollbar-track {
+  background: var(--white);
+}
+html::-webkit-scrollbar-thumb {
+  background: var(--black);
+}
+section {
+  padding: 5rem 9%;
+}
+
+
+/* suivre bous */
+.nous_suivre{
+     display: flex;
+     align-items: ;
+     justify-content: space-between;
+     height: 3rem;
+     padding-left : 5rem;
+     position: fixed;
+     background-color: white;
+     width: 100%;
+   
+}
+
+.nous_suivre_icons{
+     margin-left: 2rem;
+     color: #0e76a8;
+     height: 90px;
+     
+}
+
+hr{
+    border: none;
+    border-top: 3px double #333;
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+}
+
+ion-icon {
+    color: #1c87c9;
+        text-shadow: 2px 2px 4px #00ffff;
+        font-size: 30px;
+}
+.btn {
+  color: var(--white);
+  font-weight: 400;
+  font-size: 1.7rem;
+  border: 0.1rem solid var(--white);
+  border-radius: 10rem;
+  padding: 1.5rem 4rem;
+}
+.btn:hover {
+  background: var(--black);
+  color: var(--white);
+}
+.heading {
+  font-size: 3.5rem;
+  font-weight: 500;
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+/* home */
+.home {
+    height: 100vh;
+    background: linear-gradient(to right, transparent, blue) ; 
+/*     background-image: url('img/background.PNG'); */
+
+
+
+background-image: linear-gradient(rgba(0, 0, 255, 0.5), rgba(255, 255, 0, 0.5)), url("../img/backgound.PNG");
+   
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+  }
+  
+  .home h1 {
+    font-size: 6rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+    color: var(--white);
+  }
+  
+  .home p {
+    font-size: 1.7rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+    text-transform: none;
+    color: var(--white);
+  }
+  /* home */
+
+
+
+/*   header */
+  /* header */
+.header {
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                padding: 5rem 9%;
+                display: flex;
+                align-items: center;
+                z-index: 100;
+            }
+            
+            .header.active {
+                background: var(--white);
+                padding: 3rem 9%;
+                box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+            }
+            
+            .header.active .logo,
+            .header.active .navbar a,
+            .header.active .menu {
+                color: var(--black);
+            }
+            
+            .header .logo {
+                margin-right: auto;
+                font-size: 2rem;
+                color: var(--white);
+                font-weight: 700;
+            }
+            
+            .header .logo span {
+                font-weight: normal;
+            }
+            
+            .header .navbar a {
+                font-size: 1.7rem;
+                color: var(--white);
+                margin-left: 3rem;
+            }
+            
+            .header .menu {
+                font-size: 2rem;
+                color: var(--white);
+                display: none;
+            }
+            /* header */
+
+ 
+
+
+
+
+
+
+
+   
+
+
+   
+   
+
+
+ /*  cantact */
+
+  /* contact */
+.contact {
+    background: var(--light-bg);
+
+  }
+  input ,textarea {
+    margin-left: 100px;
+  }
+  input{
+     margin-top: 30px;
+  }
+
+
+   .btn-submit{
+     width: 100%;
+     background-color: red;
+     height: 50px;
+   }
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  /* fincantact */
+
+           /* footer */
+.footer {
+    text-align: center;
+  }
+  
+  .footer .logo {
+    font-size: 2rem;
+    color: var(--black);
+    font-weight: 700;
+  }
+  
+  .footer .logo span {
+    font-weight: normal;
+  }
+  
+  .footer p {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 1.7rem;
+    color: gray;
+  }
+  
+  .footer .socials ion-icon {
+    font-size: 2.5rem;
+    color: var(--black);
+    background: var(--light-bg);
+    border-radius: 50%;
+    padding: 1rem;
+    margin: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .footer .socials ion-icon:nth-child(1) {
+    color: var(--google-color);
+  }
+  
+  .footer .socials ion-icon:nth-child(1):hover {
+    background: var(--google-color);
+    color: var(--white);
+  }
+  
+  .footer .socials ion-icon:nth-child(2) {
+    color: var(--twitter-color);
+  }
+  
+  .footer .socials ion-icon:nth-child(2):hover {
+    background: var(--twitter-color);
+    color: var(--white);
+  }
+  
+  .footer .socials ion-icon:nth-child(3) {
+    color: var(--youtube-color);
+  }
+  
+  .footer .socials ion-icon:nth-child(3):hover {
+    background: var(--youtube-color);
+    color: var(--white);
+  }
+  
+  .footer .socials ion-icon:nth-child(4) {
+    color: var(--linkedin-color);
+  }
+  
+  .footer .socials ion-icon:nth-child(4):hover {
+    background: var(--linkedin-color);
+    color: var(--white);
+  }
+  /* footer */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* media queries */
+@media (max-width: 1200px) {
+    .header {
+      padding: 2rem;
+    }
+    .header.active {
+      padding: 2rem;
+    }
+    section {
+      padding: 3rem 2rem;
+    }
+    .home h1 {
+      font-size: 5rem;
+    }
+  }
+  @media (max-width: 991px) {
+    html {
+      font-size: 60%;
+    }
+  }
+  @media (max-width: 768px) {
+    .header .menu {
+      display: block;
+    }
+    .header .navbar {
+      position: fixed;
+      top: 6.4rem;
+      left: 0;
+      right: 0;
+      background: var(--white);
+      display: flex;
+      flex-flow: column;
+      text-align: center;
+      transform: translateX(100%);
+    }
+    header .navbar.show {
+      transform: translateX(0);
+    }
+    .header .navbar a {
+      color: var(--black);
+      margin: 0;
+      font-size: 2rem;
+      margin: 2rem 0;
+    }
+  }
+  @media (max-width: 450px) {
+    html {
+      font-size: 55%;
+   
